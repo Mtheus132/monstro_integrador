@@ -1,0 +1,172 @@
+:root {
+    --vinho: #CB3737;
+    --preto: #1A1515;
+    --cinza: #DEDDDD;
+    --branco: #FFF5EC;
+    --vinho-h:#B83232
+
+} 
+    
+    
+.dark-mode:root {
+        --vinho: #CB3737;
+        --preto: #FFF5EC;
+        --cinza: #DEDDDD;
+        --branco: #1A1515;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cinza);
+}
+header {
+    background-color: var(--vinho);
+    border: solid 1px red;
+    font-family: "Poppins";
+    height: 7.925155925155925vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    display: flex;
+}
+
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    border-style: none;
+    
+}
+
+div#cabeçario {
+    margin: 3px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    max-width: 74.225rem!important;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#quadro-maior {
+    color: var(--preto);
+    width: 60%;
+    height: 46.985446985446984vh;
+    margin: 3.7422037422037424vh 40px;
+    background-color: var(--branco);
+    border-radius: 20px;
+    display: grid;
+    align-items: baseline;
+}
+
+#voltar {
+    text-align: center;
+}
+
+.footerCheckout {
+    padding-top: 58px;
+    border-top: none!important;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footerCheckout-final {
+    background-color: var(--vinho);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 25px 0;
+}
+
+.footerCheckout-final p {
+    margin-bottom: 0;
+    font-size: 20px!important;
+}
+
+/* Início estilização caixa login */
+
+main {
+    width: 80%;
+    height: 516px;
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo {
+    font-family: "Poppins";
+    font-size: 30px;
+    color: var(--branco);
+    margin: 20px;
+}
+#email {
+    width: 851.81px;
+    height:33.87px ;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 23px;
+}
+#email::placeholder {
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #A79A9A;
+    
+}
+
+#senha {
+    width: 851.81px;
+    height:33.87px ;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 23px;
+}
+
+.forms {
+    display: flex;
+    max-width: 1073px;
+    flex-direction: column;
+}
+
+input {
+    background-color: var(--branco);
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    background-color: var(--vinho);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#cadastrar {
+    background-color: var(--cinza);
+}
+
+#cadastrar:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+    
+}
+

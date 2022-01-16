@@ -14,7 +14,8 @@ const listaprodutos = {
 
     verwhey: (req, res) => {
         return res.render("verwhey")
-    }
+    },
+
 };
 
 
