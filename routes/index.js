@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
 router.get("/listaprodutos", listaprodutos.index);
 
-router.get("/verouver", listaprodutos.verover);
+router.get("/verover", listaprodutos.verover);
 
 router.get("/vertouro", listaprodutos.vertouro);
 
