@@ -16,5 +16,12 @@ router.get("/vertouro", listaprodutos.vertouro);
 
 router.get("/verwhey", listaprodutos.verwhey);
 
+router.get("/login", function(req, res, next) {
+  res.render('login')
+})
+
+router.get("/carrinho", function(req, res, next) {
+  res.render("carrinho")
+})
 
 module.exports = router;
