@@ -10,11 +10,11 @@ router.get('/', function (req, res, next) {
 
 router.get("/listaprodutos", listaprodutos.index);
 
-router.get("/verover", listaprodutos.verover);
+router.get("/listaprodutos/over", listaprodutos.verover);
 
-router.get("/vertouro", listaprodutos.vertouro);
+router.get("/listaprodutos/touro", listaprodutos.vertouro);
 
-router.get("/verwhey", listaprodutos.verwhey);
+router.get("/listaprodutos/whey", listaprodutos.verwhey);
 
 
 
