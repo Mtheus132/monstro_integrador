@@ -3,7 +3,6 @@ var router = express.Router();
 
 var listaprodutos = require("../Controller/listaprodutos");
 
-var parceiro = require("../Controller/parceiro");
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -18,7 +17,6 @@ router.get("/listaprodutos/touro", listaprodutos.vertouro);
 
 router.get("/listaprodutos/whey", listaprodutos.verwhey);
 
-router.get("/sejaumparceiro", parceiro.index);
 
 
 
