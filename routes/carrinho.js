@@ -5,6 +5,10 @@ router.get("/", function(req, res, next) {
     res.render("carrinho")
 })
 
+router.get("/", function(req, res, next) {
+    res.render("index")
+})
+
 
 
 module.exports = router;
