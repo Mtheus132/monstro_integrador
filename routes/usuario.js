@@ -13,7 +13,10 @@ router.get('/', function (req, res, next) {
 
 router.get("/sejaumparceiro", parceiro.index);
 
-router.get("/cadastro", parceiro.cadastro);
+router.get("/login", parceiro.login);
+
+router.get("/carrinho", parceiro.carrinho);
+
 
 
 

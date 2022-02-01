@@ -3,9 +3,15 @@ const parceiro = {
         return res.render("cadastro")
     },
 
-    cadastro: (req, res) => {
-        return res.render("usuario")
+    login: (req, res) => {
+        return res.render("login")
+    },
+
+    carrinho: (req, res) => {
+        return res.render("carrinho")
     }
+
+
 };
 
 
