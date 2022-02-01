@@ -21,11 +21,10 @@ body {
     background-color: var(--cinza);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 header {
     background-color: var(--vinho);
-    border: solid 1px red;
     font-family: "Poppins";
     height: 7.925155925155925vh;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
