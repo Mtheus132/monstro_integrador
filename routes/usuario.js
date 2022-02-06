@@ -17,6 +17,10 @@ router.get("/login", parceiro.login);
 
 router.get("/carrinho", parceiro.carrinho);
 
+router.get("/cadastroempresa", parceiro.cadastroempresa);
+
+router.get("/cadastropessoa", parceiro.cadastropessoa);
+
 
 
 

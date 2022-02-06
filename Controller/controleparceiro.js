@@ -9,8 +9,13 @@ const parceiro = {
 
     carrinho: (req, res) => {
         return res.render("carrinho")
+    },
+    cadastroempresa: (req, res) => {
+        return res.render("cadastro-empresa")
+    },
+    cadastropessoa: (req, res) => {
+        return res.render("cadastro-empresa")
     }
-
 
 };
 
