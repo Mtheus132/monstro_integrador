@@ -1,0 +1,103 @@
+footer {
+    width:100% ;
+    height: 337px ;
+    margin-top: 16vh;
+    background-color: var(--preto);   
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer #footer-caixa-original{
+    padding-top: 6vw;
+    padding-left: 6vh;
+
+}
+
+
+footer div{
+    display: flex;
+}
+
+
+footer h2 {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+footer #footer-logo-copys{
+    flex-direction: column;
+    width: 19vw;
+    height: 10%;
+}
+
+footer .imagem-logo-footer{
+    margin-bottom: 2vw;
+}
+
+footer .texto-footer{
+    margin-bottom: 1vw;
+}
+
+#footer-links{
+    margin-left: 18vw;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+#footer-sociais{
+    margin-left: 18vw;
+    
+}
+#footer-sociais img{
+    width: 20%;
+}
+
+#organiazar-sociais{
+    display: flex;
+    width: 18vw;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+#footer-sociais .facebook a img{
+    width: 75%;
+}
+
+#footer-sociais .instagram a img{
+    width: 98%;
+    margin-left: -1.4vw;
+}
+
+#footer-sociais .github a img{
+    width: 60%;
+    margin-left: -4.4vw;
+}
+
+
+
+#footer-links ul strong{
+    padding-bottom: 2vh;
+    color: var(--branco);
+}
+
+
+#footer-links li{
+    padding-bottom: 1vh;
+    color: var(--branco);
+    text-decoration: none;   
+}
+
+#footer-links li a{
+    padding-bottom: 1vh;
+    color: var(--branco);
+    text-decoration: none;   
+}
+#footer-links li a:hover{
+    color: var(--vinho);
+}
