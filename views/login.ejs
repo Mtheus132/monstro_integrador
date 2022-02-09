@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/login.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
 </head>
 
 <body>
@@ -21,7 +22,12 @@
         <h1 id="titulo">Seja Bem vindo(a) Monstro!</h1>
         <div class="forms">
             <input id="Email" type="text" placeholder="Digite seu email:">
-            <input id="Senha" type="password" placeholder="Digite sua senha:">
+            <input type="password"  name="Senha" id="Senha" placeholder="Digite sua senha:">
+            <div class="box-check" >
+                <input type="checkbox" name="check" id="check" onclick="esconderSenha()">
+            <label for="check">Mostrar/Esconder senha</label>
+            </div>
+            
         </div>
         <div class="buttons">
             <button id="cadastrar">Criar conta</button>
@@ -35,7 +41,7 @@
     </main>
     <div id="voltar">
         <button>
-            <a href="index.ejs" style="text-decoration: none; color: var(--white);">Voltar a página inicial</a>
+            <a href="/" style="text-decoration: none; color: var(--white);">Voltar a página inicial</a>
         </button>
     </div>
 
@@ -53,7 +59,16 @@
     </footer>
     </footer>
 
-
+    <script>
+        function esconderSenha () {
+    let inputSenha = document.getElementById("Senha");
+    if(inputSenha.type == "password") {
+        inputSenha.type = "texto";
+    } else {
+        inputSenha.type = "password"
+    }
+}
+    </script>
 </body>
 
 </html>
