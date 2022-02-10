@@ -19,6 +19,10 @@ body {
     height: 100vh;
     width: 100%;
     background-color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 header {
     background-color: var(--vinho);
@@ -71,9 +75,8 @@ div#cabeçario {
 }
 
 .footerCheckout {
-    padding-top: 58px;
     border-top: none!important;
-    position: fixed;
+    height: 86px;
     bottom: 0px;
     width: 100%;
 }
@@ -83,7 +86,7 @@ div#cabeçario {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
-    padding: 25px 0;
+    padding: 30px 0;
 }
 
 .footerCheckout-final p {
