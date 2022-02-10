@@ -25,12 +25,15 @@ body {
     
 }
 header {
-    background-color: var(--vinho);
-    border: solid 1px red;
+    background-color: #FFFFFF;
     font-family: "Poppins";
     height: 7.925155925155925vh;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
     display: flex;
+}
+
+main {
+    border-radius: 20px;
 }
 
 
