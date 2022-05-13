@@ -1,103 +1,89 @@
+:root {
+  --vinho: #cb3737;
+  --preto: #1a1515;
+  --cinza: #dedddd;
+  --branco: #fff5ec;
+}
+
 footer {
-    width:100% ;
-    height: 337px ;
-    margin-top: 16vh;
-    background-color: var(--preto);   
-    display: flex;
-    justify-content: center;
-    
+  width: 100%;
+  background-color: black;
+  height: 230px;
 }
 
-footer #footer-caixa-original{
-    padding-top: 6vw;
-    padding-left: 6vh;
-
+.geral {
+  display: flex;
+  flex-direction: row;
 }
 
-
-footer div{
-    display: flex;
+.parte-texto-um {
+  color: var(--branco);
+  font-family: "Poppins";
+  font-size: 24px;
+  margin-top: 70px;
+  padding-left: 70px;
+  font-weight: 500;
 }
 
-
-footer h2 {
-    color: var(--branco);
-    font-weight: 400;
-    font-size: 14px;
-
+#gpoints {
+  width: 100px;
+  height: 50px;
+  padding-top: 150px;
+  margin-left: -120px;
 }
 
-footer #footer-logo-copys{
-    flex-direction: column;
-    width: 19vw;
-    height: 10%;
+h1 {
+  color: var(--branco);
+  font-family: "Poppins";
+  font-size: 24px;
+  padding-left: 200px;
+  font-weight: 500;
+  margin-top: 0px;
 }
 
-footer .imagem-logo-footer{
-    margin-bottom: 2vw;
+.parte-texto-dois h3 {
+  color: var(--branco);
+  font-family: "Poppins";
+  font-size: 14px;
+  margin-top: -10px;
+  padding-left: 230px;
+  font-weight: 300;
 }
 
-footer .texto-footer{
-    margin-bottom: 1vw;
+#logo-footer {
+  padding-left: 300px;
+  padding-top: 20px;
 }
 
-#footer-links{
-    margin-left: 18vw;
-    text-decoration: none;
-    list-style-type: none;
+.parte-texto-dois h5 {
+  color: var(--branco);
+  font-family: "Poppins";
+  font-size: 8px;
+  margin-top: 30px;
+  padding-left: 250px;
+  font-weight: 200;
 }
 
-
-#footer-sociais{
-    margin-left: 18vw;
-    
-}
-#footer-sociais img{
-    width: 20%;
+.parte-texto-tres h1 {
+  margin-top: 70px;
 }
 
-#organiazar-sociais{
-    display: flex;
-    width: 18vw;
-    text-align: center;
-    align-items: center;
+#footer-face {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
-
-
-#footer-sociais .facebook a img{
-    width: 75%;
+#footer-git {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+#footer-insta {
+  width: 50px;
+  height: 50px;
 }
 
-#footer-sociais .instagram a img{
-    width: 98%;
-    margin-left: -1.4vw;
-}
-
-#footer-sociais .github a img{
-    width: 60%;
-    margin-left: -4.4vw;
-}
-
-
-
-#footer-links ul strong{
-    padding-bottom: 2vh;
-    color: var(--branco);
-}
-
-
-#footer-links li{
-    padding-bottom: 1vh;
-    color: var(--branco);
-    text-decoration: none;   
-}
-
-#footer-links li a{
-    padding-bottom: 1vh;
-    color: var(--branco);
-    text-decoration: none;   
-}
-#footer-links li a:hover{
-    color: var(--vinho);
+.imagens-footer {
+  margin-left: 210px;
 }

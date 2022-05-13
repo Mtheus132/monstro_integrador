@@ -1,179 +1,150 @@
 :root {
-    --vinho: #CB3737;
-    --preto: #1A1515;
-    --cinza: #DEDDDD;
-    --branco: #FFF5EC;
-    --vinho-h:#B83232
-    } 
-    
-    
-    .dark-mode:root {
-        --vinho: #CB3737;
-        --preto: #FFF5EC;
-        --cinza: #DEDDDD;
-        --branco: #1A1515;
-    }
-    
-    body {
-        height: 1450px;
-    }
-    
-    header {
-        width: 100%;
-        height: 30vh;
-    
-        background-color: transparent;
-    
-        font-family: "Poppins";
-    }
-    
-    .promoções {
-        max-width: 100%;
-        height: 13%;
-    
-        background-color: var(--vinho);
-        
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        
-        
-    }
-    
-    
-    
-    .cabeçario {
-        background-color: var(--preto);
-    
-        
-        height: 19.3vh;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    }
-    
-    
-    #logo {
-        width: 10.5vw;
-        height: 6.72vh;
-        margin-left: 9.191176470588236vw;
-        margin-right: 5.147058823529412vw ;
-    }
-    
-    .pesquisar {
-        width: 38vw;
-        height: 6vh;
-       
-        margin-right: 13vw;
-        display: flex;
-        align-items: center;
-    
-        background-color: white;
-    
-      
-         
-    }
-    
-    
-    #icone-buscar {
-        width: 2.6470588235294117vw;
-        height: 5.5vh;
-        display: flex;
-        margin-left: 1.3235294117647058vw;
-    }
-    
-    .pesquisar input {
-        margin-left: 1vw;
-    }
-    
-    
-    #icone-usuario {
-        width: 5vw;
-        height: 7vh ;
-        
-    }
-    
-    #icone-carrinho {
-        width:  4vw;
-        height: 8vh;
-        
-    }
-    
-    .menu-principal {
-        background-color: var(--vinho);
-    
-        
-        height: 6.88vh;
-    
-        display: flex;
-        padding-left: 10vw;
-        align-items: center;
-    }
-    
-    .menu-principal a li {
-        display: flex;
-        color: var(--branco);
-    
-        font-family: "Poppins";
-        font-weight: 500;
-    
-        cursor: pointer;
-        transition: ease-out 0.3s;
-        
-    }
-    
-    .menu-principal a {
-        text-decoration: none;
-    }
-    
-    #pagina-inicial {
-        margin-right: 2.8vw;
-        
-    
-    }
-    
-    #lista-produtos {
-        margin-right: 2.8vw;
-        
-    }
-    #sobre-empresa {
-        margin-right: 2.8vw;
-        
-    }
-    
-    #parceiro {
-        margin-right: 2.8vw;
-        
-    }
-    
-    
-    .menu-principal a li:hover {
-        background-color: var(--branco);
-        color: var(--vinho);
-        border-radius: 5px;
-        height: 7vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        
-    }
+  --vinho: #cb3737;
+  --preto: #1a1515;
+  --cinza: #dedddd;
+  --branco: #fff5ec;
+  --vinho-h: #b83232;
+}
 
-    .promoções h5 {
-        animation: fly 30s;
-        animation-iteration-count: infinite;
-        color: var(--branco);
-        font-weight: 400;
-        animation-timing-function: linear;
-        
-    }
-    
-    @keyframes fly {
-        
-        from {
-            transform:translateX(135%)
-        }
-        to {
-            transform:translateX(-100%)
-        }
-    }
+.dark-mode:root {
+  --vinho: #cb3737;
+  --preto: #fff5ec;
+  --cinza: #dedddd;
+  --branco: #1a1515;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+
+  background-color: transparent;
+
+  font-family: "Poppins";
+}
+
+.promoções {
+  max-width: 100%;
+  height: 13%;
+
+  background-color: var(--vinho);
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cabeçario {
+  background-color: var(--preto);
+
+  height: 19.3vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#logo {
+  width: 10.5vw;
+  height: 6.72vh;
+  margin-left: 9.191176470588236vw;
+  margin-right: 5.147058823529412vw;
+}
+
+.pesquisar {
+  width: 38vw;
+  height: 6vh;
+
+  margin-right: 13vw;
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+}
+
+#icone-buscar {
+  width: 2.6470588235294117vw;
+  height: 5.5vh;
+  display: flex;
+  margin-left: 1.3235294117647058vw;
+}
+
+.pesquisar input {
+  margin-left: 1vw;
+}
+
+#icone-usuario {
+  width: 5vw;
+  height: 7vh;
+}
+
+#icone-carrinho {
+  width: 4vw;
+  height: 8vh;
+}
+
+.menu-principal {
+  background-color: var(--vinho);
+
+  height: 6.88vh;
+
+  display: flex;
+  padding-left: 10vw;
+  align-items: center;
+}
+
+.menu-principal a li {
+  display: flex;
+  color: var(--branco);
+
+  font-family: "Poppins";
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.menu-principal a {
+  text-decoration: none;
+}
+
+#pagina-inicial {
+  margin-right: 2.8vw;
+}
+
+#lista-produtos {
+  margin-right: 2.8vw;
+}
+#sobre-empresa {
+  margin-right: 2.8vw;
+}
+
+#parceiro {
+  margin-right: 2.8vw;
+}
+
+.menu-principal a li:hover {
+  background-color: var(--branco);
+  color: var(--vinho);
+  border-radius: 5px;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.promoções h5 {
+  animation: fly 30s;
+  animation-iteration-count: infinite;
+  color: var(--branco);
+  font-weight: 400;
+  animation-timing-function: linear;
+}
+
+@keyframes fly {
+  from {
+    transform: translateX(135%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

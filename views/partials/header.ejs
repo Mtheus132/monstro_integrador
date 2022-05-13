@@ -1,48 +1,63 @@
 <body>
+  <header>
+    <div class="promoções">
+      <h5>
+        Promoção da semana!! Kit 2x 100% Whey 900g (1.8kg) Max Titanium Whey
+        Protein Concentrado de R$1.499 por apenas R$899
+      </h5>
+    </div>
 
-    <header>
+    <div class="cabeçario">
+      <img id="logo" src="images/logo.oficial.jpeg" alt=" Icone do Site" />
 
-        <div class="promoções">
-            <h5>Promoção da semana!! Kit 2x 100% Whey 900g (1.8kg) Max Titanium Whey Protein Concentrado de R$1.499 por
-                apenas R$899</h5>
-        </div>
+      <div class="pesquisar">
+        <img id="icone-buscar" src="images/icone-busca.png" alt="icone busca" />
+        <input type="text" name="Pesquisar" placeholder=" Pesquisar" />
+      </div>
+      <ul id="login">
+        <% if(estaLogado) { %>
+        <a href="/login"
+          ><img
+            id="icone-usuario"
+            src="images/icone-entrar-peq.png"
+            alt="Icone usuario"
+        /></a>
+        <li><a href="/admin"><%= usuarioLogado.nome %></a></li>
+        <li><a href="/logout">Logout</a></li>
+        <% } else { %>
+        <a href="/login"
+          ><img
+            id="icone-usuario"
+            src="images/icone-usuario-trans.png"
+            alt="Icone usuario"
+        /></a>
 
+        <% } %>
+      </ul>
+      <a href="/carrinho"
+        ><img
+          id="icone-carrinho"
+          src="images/crrinho-original-pq-trans.png"
+          alt="Icone de um carrinho"
+        />
+      </a>
+    </div>
 
-        <div class="cabeçario">
-            <img id="logo" src="images/logo.oficial.jpeg" alt=" Icone do Site" />
+    <div class="menu-principal">
+      <a id="pagina-inicial" href="/">
+        <li ul>Página Inicial</li>
+      </a>
+      <a id="lista-produtos" href="/listaprodutos">
+        <li ul>Lista de Produtos</li>
+      </a>
 
-            <div class="pesquisar">
-                <img id="icone-buscar" src="images/icone-busca.png" alt="icone busca">
-                <input type="text" name="Pesquisar" placeholder=" Pesquisar" />
-            </div>
+      <a id="parceiro" href="/cadastroempresa">
+        <li ul>Seja um Parceiro</li>
+      </a>
 
-            <a href="/login"><img id="icone-usuario" src="images/icone-entrar-peq.png" alt="Icone usuario"></a>
-
-            <a href="/carrinho"><img id="icone-carrinho" src="images/crrinho-original-pq-trans.png"
-                    alt="Icone de um carrinho">
-            </a>
-        </div>
-
-
-        <div class="menu-principal">
-
-            <a id="pagina-inicial" href="/">
-                <li ul>Página Inicial</li>
-            </a>
-            <a id="lista-produtos" href="listaprodutos">
-                <li ul>Lista de Produtos</li>
-            </a>
-
-
-            <a id="parceiro" href="/cadastroempresa">
-                <li ul>Seja um Parceiro</li>
-            </a>
-
-            <a id="sobre-empresa" href="#">
-                <li ul>Sobre a Empresa</li>
-            </a>
-
-
-        </div>
-
-    </header>
+      <a id="sobre-empresa" href="#">
+        <li ul>Sobre a Empresa</li>
+      </a>
+    </div>
+  </header>
+</body>

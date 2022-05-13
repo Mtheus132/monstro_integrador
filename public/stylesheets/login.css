@@ -1,192 +1,207 @@
 :root {
-    --vinho: #CB3737;
-    --preto: #1A1515;
-    --cinza: #DEDDDD;
-    --branco: #FFF5EC;
-    --vinho-h:#B83232
+  --vinho: #cb3737;
+  --preto: #1a1515;
+  --cinza: #dedddd;
+  --branco: #fff5ec;
+  --vinho-h: #b83232;
+}
 
-} 
-    
-    
 .dark-mode:root {
-        --vinho: #CB3737;
-        --preto: #FFF5EC;
-        --cinza: #DEDDDD;
-        --branco: #1A1515;
+  --vinho: #cb3737;
+  --preto: #fff5ec;
+  --cinza: #dedddd;
+  --branco: #1a1515;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--cinza);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+  height: 100vh;
+  width: 100%;
+  background-color: var(--cinza);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 header {
-    background-color: #FFFFFF;
-    font-family: "Poppins";
-    height: 7.925155925155925vh;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-    display: flex;
+  background-color: #ffffff;
+  font-family: "Poppins";
+  height: 7.925155925155925vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: flex;
 }
 
 main {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
-
 img {
-    display: inline-block;
-    vertical-align: middle;
-    height: auto;
-    border-style: none;
-    
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  border-style: none;
 }
 
 div#cabeçario {
-    margin: 3px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 3px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row {
-    max-width: 74.225rem!important;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    flex-wrap: nowrap;
+  max-width: 74.225rem !important;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 #quadro-maior {
-    color: var(--preto);
-    width: 60%;
-    height: 46.985446985446984vh;
-    margin: 3.7422037422037424vh 40px;
-    background-color: var(--branco);
-    border-radius: 20px;
-    display: grid;
-    align-items: baseline;
+  color: var(--preto);
+  width: 60%;
+  height: 46.985446985446984vh;
+  margin: 3.7422037422037424vh 40px;
+  background-color: var(--branco);
+  border-radius: 20px;
+  display: grid;
+  align-items: baseline;
 }
 
 #voltar {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .footerCheckout {
-    border-top: none!important;
-    height: 86px;
-    bottom: 0px;
-    width: 100%;
+  border-top: none !important;
+  height: 86px;
+  bottom: 0px;
+  width: 100%;
 }
 
 .footerCheckout-final {
-    background-color: var(--vinho);
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 30px 0;
+  background-color: var(--vinho);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 30px 0;
 }
 
 .footerCheckout-final p {
-    margin-bottom: 0;
-    font-size: 20px!important;
+  margin-bottom: 0;
+  font-size: 20px !important;
 }
 
 /* Início estilização caixa login */
 
 main {
-    width: 80%;
-    height: 516px;
-    background-color: var(--preto);
-    display: flex;
-    flex-direction: column;
-    margin: 40px auto;
-    align-items: center;
-    justify-content: center;
+  width: 80%;
+  height: 516px;
+  background-color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
 }
 
 #titulo {
-    font-family: "Poppins";
-    font-size: 30px;
-    color: var(--branco);
-    margin: 20px;
+  font-family: "Poppins";
+  font-size: 30px;
+  color: var(--branco);
+  margin-left: 300px;
 }
+
 #email {
-    width: 851.81px;
-    height:33.87px ;
-    border-radius: 10px;
-    border-style: none;
-    margin-bottom: 23px;
+  width: 851.81px;
+  height: 33.87px;
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: 23px;
 }
 #email::placeholder {
-    font-family: "Poppins";
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    color: #A79A9A;
-    
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #a79a9a;
+}
+
+#senha::placeholder {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #a79a9a;
 }
 
 #senha {
-    width: 851.81px;
-    height:33.87px ;
-    border-radius: 10px;
-    border-style: none;
-    margin-bottom: 23px;
+  width: 851.81px;
+  height: 33.87px;
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: 23px;
 }
 
 .forms {
-    display: flex;
-    max-width: 1073px;
-    flex-direction: column;
+  display: flex;
+  max-width: 1073px;
+  flex-direction: column;
 }
 
 input {
-    background-color: var(--branco);
-    margin: 10px;
-    width: 300px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
+  background-color: var(--branco);
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .box-check {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #check {
-    width: 25px;
+  width: 25px;
 }
 
 .forms label {
-    color: var(--branco);
+  color: var(--branco);
 }
 
 button {
-    width: 150px;
-    height: 30px;
-    background-color: var(--vinho);
-    color: var(--branco);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: var(--vinho);
+  color: var(--branco);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  list-style: none;
+}
+.buttons {
+  margin-left: 300px;
 }
 
 #cadastrar {
-    background-color: var(--cinza);
+  background-color: var(--cinza);
+}
+
+#cadastrar a {
+  color: var(--preto);
+  text-decoration: none;
 }
 
 #cadastrar:hover {
-    background-color: var(--branco);
-    color: var(--preto);
-    
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+h1 {
+  color: #1a1515;
 }

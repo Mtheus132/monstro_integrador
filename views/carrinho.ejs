@@ -1,223 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monstro Suplementos - Carrinho</title>
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/carrinho.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/carrinho.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
-    <header>
-        <div id="cabeçario">
-            <img id="logo" src="images/logo.oficial.jpeg" alt="Icone do Site">
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="row">
-                <div id="quadro-maior">
-                    <h2>Meu carrinho</h2>
-                    <div id="carrinho-topo">
-                        <span id="prod">Produto</span>
-                        <span id="preco">Preço</span>
-                        <span id="qtd">Quantidade</span>
-                        <span id="total">Total</span>
-                    </div>
-                    <div id="carrinho-itens">
-                        <div class="box-itens">
-                            <div class="box-infoProd">
-                                <div style="max-width: 288.8px;" class="box-imgProd">
-                                    <div class="imgProd">
-                                        <img src="images/whey-lista.png" alt="whey" style="opacity: 1;">
-                                    </div>
-                                    <div class="infoProd-text">
-                                        <span class="prod-nome">Whey Protein Isolado - Gold</span>
-                                        <span class="atributo"></span>
-                                        <div class="info-estoque">
+  <header>
+    <img id="logo-carrinho" src="images/logo.oficial.jpeg" alt="" />
+  </header>
 
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                            <div class="carrinho-flex">
-                                <div class="box-preco" style="max-width: 107.8px;">
-                                    <span class="preco-por">
-                                        <span>
-                                            R$ 100,00</span>
-                                    </span>
-                                </div>
-                                <div class="box-prodQtde" style="max-width: 123.8px;">
-                                    <div class="qtd-box">
-                                        <!-- <button type="button" name="button" class="btn-acao"></button> -->
-                                        <input type="text">
-                                        <!-- <button></button> -->
-                                    </div>
-                                    <a href="" class="bt-remover">Remover</a>
-                                </div>
-                                <div class="box-precoFinal" style="max-width: 145px;">
-                                    <span>R$ 120,00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-itens">
-                            <div class="box-infoProd">
-                                <div style="max-width: 288.8px;" class="box-imgProd">
-                                    <div class="imgProd">
-                                        <img src="images/whey-lista.png" alt="whey" style="opacity: 1;">
-                                    </div>
-                                    <div class="infoProd-text">
-                                        <span class="prod-nome">Whey Protein Isolado - Gold</span>
-                                        <span class="atributo"></span>
-                                        <div class="info-estoque">
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                            <div class="carrinho-flex">
-                                <div class="box-preco" style="max-width: 107.8px;">
-                                    <span class="preco-por">
-                                        <span>
-                                            R$ 100,00</span>
-                                    </span>
-                                </div>
-                                <div class="box-prodQtde" style="max-width: 123.8px;">
-                                    <div class="qtd-box">
-                                        <!-- <button type="button" name="button" class="btn-acao"></button> -->
-                                        <input type="text">
-                                        <!-- <button></button> -->
-                                    </div>
-                                    <a href="" class="bt-remover">Remover</a>
-                                </div>
-                                <div class="box-precoFinal" style="max-width: 145px;">
-                                    <span>R$ 120,00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calculoDeFrete boxCarrinhoFrete">
-                            <form onsubmit="return false;">
-                                <label for="cep">Entrega</label>
-                                <div class="calculoDeFrete-inputContainer">
-                                    <div class="valida-input">
-                                        <input type="tel" name="cep" value=""
-                                            class="campocep mascaraCEP boxCarrinhoCampoCep"
-                                            placeholder="Informe seu CEP" />
-                                    </div>
-                                    <button type="submit" name="btnCalcularFrete" id="calcularFrete"
-                                        class="calculoDeFrete-inputContainer-calcular calcularFrete">Calcular</button>
-                                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-                                        class="abrePopup calculoDeFrete-inputContainer-naoSeiCep">Não sei meu CEP</a>
-                                </div>
-                                <p class="buscaCep-mensagemErro"></p>
-                                <div class="boxCarrinhoFreteGratis">
-                                    <div class="calculoDeFrete boxMensagemFreteGratis">
-                                        <form class="boxCarrinhoFreteGratisFormulario" onsubmit="return false;">
-                                            <div class="calculoDeFrete-inputContainer">
-                                                <label class="consultaFreteTop" for="cep-top">Saiba se você tem
-                                                    <span><img
-                                                            src="https://www.gsuplementos.com.br/checkout/tema/checkout/img/carrinho-gsuplementos/frete.svg"
-                                                            alt="Frete grátis">Frete Grátis</span></label>
-                                            </div>
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div class="todo">
-                <div id="quadro-menor">
-
-                    <div class="resumo-pedido">
-                        <span class="resumoPedido-t1">Resumo do Pedido</span>
-                        <div class="resumoPedido-item">
-                            <span>Subtotal</span>
-                            <span>R$ 175,00</span>
-                        </div>
-                        <div class="resumoPedido-item">
-                            <span>Entrega</span>
-                            <span>a calcular</span>
-                        </div>
-                        <div class="resumoPedido-item-total">
-                            <span>Total</span>
-                            <span>R$ 175,00</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="gpoints-carrinho">
-                    <div class="gpoints-img">
-                        <img src="images/gpoints.jpg" alt="imagem-points">
-                    </div>
-                    <span class="gpoints-txt">
-                        Ganhe
-                        <strong>175 G Pontos</strong>
-                        nesta compra.
-                    </span>
-                </div>
-
-                <a href="">
-                    <button id="botão-carrinho-um">
-                        Adicionar mais produtos
-                    </button>
-                </a>
-                <a href="">
-                    <button id="botão-ver-um">
-                        Fechar pedido
-                    </button>
-                </a>
-
-            </div>
-
-
-
-
-
-        </section>
-
-
-
-
-
-    </main>
-
-
-    <footer class="footerCheckout">
-        <div id="voltar">
-            <button>
-                <a href="/" style="text-decoration: none; color: var(--white);">Voltar a página inicial</a>
-            </button>
-        </div>
-        <section class="footerCheckout-final">
-
-            <div class="row" style="justify-content: center;">
-
-                <div class="quadro-maior">
-                    <p>
-                        Monstro Suplementos - Todos os direitos reservados
-                    </p>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-
-
-</body>
-
+  <main>
+      <img src="images/whey-detalhe.png" alt="" />
+      <img src="images/whey-detalhe.png" alt="" />
+      <h1>
+        Kit 2x 100% Whey 900g (1.8kg) Max Titanium Whey Protein Concentrado
+      </h1>
+      <h1>
+        Kit 2x 100% Whey 900g (1.8kg) Max Titanium Whey Protein Concentrado
+      </h1>
+    </div>
+  </main>
 </html>

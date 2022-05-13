@@ -1,0 +1,15 @@
+body{
+    margin: 0%;
+    height: auto;
+}
+
+main{
+    margin: 0%;
+    height: 80vh;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}

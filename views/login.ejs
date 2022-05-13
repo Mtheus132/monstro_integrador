@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monstro Suplementos - Login</title>
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/login.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    
-</head>
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
-    <header>
-        <div id="cabeçario">
-            <img id="logo" src="images/logo.oficial.jpeg" alt="Icone do Site">
-        </div>
-    </header>
+  <body>
     <main>
-        <h1 id="titulo">Seja Bem vindo(a) Monstro!</h1>
+      <form method="post">
+        <h1 id="titulo">Entre em sua conta!</h1>
         <div class="forms">
-            <input id="Email" type="text" placeholder="Digite seu email:" required>
-            <input type="password"  name="Senha" id="Senha" placeholder="Digite sua senha:" required>
-            <div class="box-check" >
-                <input type="checkbox" name="check" id="check" onclick="esconderSenha()">
+          <input
+            id="email"
+            type="text"
+            name="email"
+            placeholder="Digite seu email"
+            required
+          />
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Digite sua senha"
+            required
+          />
+          <div class="box-check">
+            <input
+              type="checkbox"
+              name="check"
+              id="check"
+              onchange="mostraEscondeSenha (event)"
+            />
             <label for="check">Mostrar/Esconder senha</label>
-            </div>
-            
+          </div>
         </div>
+
         <div class="buttons">
-            <button id="cadastrar">Criar conta</button>
-            <button>
-                Entrar
-            </button>
+          <button id="cadastrar">
+            <a href="/cadastropessoa">Criar conta</a>
+          </button>
+
+          <button type="submit">Entrar</button>
         </div>
-        <div style="margin-top: 20px;">
-            <a href="" style="color: var(--vinho); text-decoration: none;">Esqueci minha senha</a>
-        </div>
+      </form>
+      <div style="margin-top: 20px">
+        <a href="" style="color: var(--vinho); text-decoration: none"
+          >Esqueci minha senha</a
+        >
+      </div>
     </main>
     <div id="voltar">
-        <button>
-            <a href="/" style="text-decoration: none; color: var(--white);">Voltar a página inicial</a>
-        </button>
+      <button>
+        <a href="/" style="text-decoration: none; color: var(--white)"
+          >Voltar a página inicial</a
+        >
+      </button>
     </div>
 
-
-    <footer class="footerCheckout">
-        <section class="footerCheckout-final">
-            <div class="row" style="justify-content: center;">
-                <div class="quadro-maior">
-                    <p>
-                        Monstro Suplementos - Todos os direitos reservados
-                    </p>
-                </div>
-            </div>
-        </section>
-    </footer>
-    </footer>
-
     <script>
-        function esconderSenha () {
-    let inputSenha = document.getElementById("Senha");
-    if(inputSenha.type == "password") {
-        inputSenha.type = "texto";
-    } else {
-        inputSenha.type = "password"
-    }
-}
+      function mostraEscondeSenha(event) {
+        if (event.target.checked) {
+          document.getElementById("senha").type = "text";
+        } else {
+          document.getElementById("senha").type = "password";
+        }
+      }
     </script>
-</body>
-
+  </body>
 </html>

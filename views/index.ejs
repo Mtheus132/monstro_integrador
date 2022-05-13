@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina-inicial</title>
+    <title>Monstro Suplementos - Vire um Maromba!</title>
 
     <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
 
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
+
+
 
 </head>
 
@@ -31,9 +33,9 @@
         
         
         <div class="caixa-principal">
-            <a class="caixa-produtos" href="/views/index.ejs"> Suplementos</a>
+            
         </div>
-    </main>
+   
 
     
     <section class="seção-produtos">
@@ -42,35 +44,21 @@
 
             <section class="seção-produtos">
                 <div class="produtos">
-                            
+                    <% produtos.forEach(function(produto) {  %>
+                         
                     <div class="produto1">
-                        <img id="produto-whey-1" src="images/whey-lista.png" alt="Imagem Whey Protein">
+                        <img id="produto-whey-1" src="/uploads/<%= produto.imagem %>" alt="Imagem Whey Protein">
                         <div class="texto-botão-1">
-                            <p id="descrição-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero cumque expedita nostrum pariatur reiciendis nemo iure quam aliquam dignissimos praesentium debitis laboriosam ipsa, reprehenderit adipisci! Sequi distinctio maiores reiciendis!</p>
+                            <p id="descrição-1"><%= produto.nome %> </p>
+                            <p id="descrição-1"><%= produto.descricao %> </p>
+                            <p id="descrição-1"><%= produto.valor %> </p>
                             <button id="botão-carrinho-1">
                                 Adicionar ao Carrinho
                             </button>
                         </div>
                     </div>
+                    <% })  %> 
                     
-                    <div class="produto2">
-                        <img id="produto-whey-2" src="images/touro-lista.png" alt="Imagem Touro suplemento">
-                        <div class="texto-botão-2">
-                            <p id="descrição-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, necessitatibus! Blanditiis fugit explicabo accusamus, rerum tempore distinctio ipsum quod, magni in sequi nulla temporibus rem repudiandae modi perferendis voluptas similique?</p>
-                            <button id="botão-carrinho-2">
-                                Adicionar ao Carrinho
-                            </button>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="produto3">
-                        <img id="produto-whey-3" src="images/over-lista.png" alt="Imagem Over suplemento">
-                        <div class="texto-botão-3">
-                            <p id="descrição-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, necessitatibus! Blanditiis fugit explicabo accusamus, rerum tempore distinctio ipsum quod, magni in sequi nulla temporibus rem repudiandae modi perferendis voluptas similique?</p>
-                            <button id="botão-carrinho-3">
-                                Adicionar ao Carrinho
-                            </button>
                     </div>
                     </div>
                     
@@ -90,6 +78,7 @@
             <a href="../imgs/icones.png.png"><img id="icones-unidos" src="images/icones.png.png" alt=""></a>
 
         </div>
+    </main>
     
         <%- include("./partials/footer") %>
 
