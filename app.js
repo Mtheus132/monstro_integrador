@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var session = require("express-session");
+var session = require('express-session')
 
 var listaRouter = require('./routes/lista');
 var usersRouter = require('./routes/users');
@@ -20,6 +20,12 @@ app.use(session({
   saveUninitialized: true
 }))
 
+app.use(function adicionaUserNoRender(req, res, next){
+  res.locals.estaLogado = req.session.estaLogado
+  res.locals.usuarioLogado = req.session.usuarioLogado
+  next()
+})
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -28,12 +34,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', listaRouter, usuarioRouter);
 app.use('/users', usersRouter);
-app.use('/admin', require("./routes/admin"))
+app.use('/admin', require("./routes/admin"));
+app.use('/adminempresa', require("./routes/adminempresa"));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
 });
+
+
+
 
 // error handler
 app.use(function (err, req, res, next) {

@@ -17,7 +17,7 @@
   
 
   body {
-      height: 1450px;
+      height: auto;
       margin: 0px;
   }
   
@@ -35,8 +35,19 @@
   
   
   }
+  main{
+    height: 140vh;
+  }
+
+  #login{
+    display: flex;
+    flex-direction: column;
+  }
   
-  
+  #login li{
+    text-decoration: none;
+    list-style: none;
+  }
   
   .descrição-produtos {
   
@@ -77,13 +88,21 @@
     margin-top: 4vh;
   }
   .sub-icones{
-      width: 100%;
-      height: 15vh;
-      text-align: center;
-      margin-top: 2vw;
-      MARGIN-BOTTOM: 0.7vw;
+    width: 100%;
+    height: 9vh;
+    text-align: center;
+    margin-top: 1vw;
+    MARGIN-BOTTOM: 0.7vw;
       
   }
+
+  .form-cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+
+  
 
      
       
@@ -124,6 +143,7 @@
   /* width: 3%; */
   padding-left: 2vh;
   margin-top: 0vw;
+  flex-wrap: wrap;
   
 }
 
@@ -139,25 +159,18 @@
 
 .produto3{
   display: flex;
+  flex-wrap: wrap;
 }
 
 #produto-whey-1{
-  width: 19vw;
-  height: 30vh;
-  margin-left: -5vw;
-}
-
-#produto-whey-2{
-  width: 19vw;
-  height: 34vh;
-  margin-left: 0vw;
-  margin-top: -1vw;
-}
-#produto-whey-3{
   width: 18vw;
   height: 30vh;
-  margin-left: -1vw
+  margin-left: -3vw;
+  padding-right: 26px;
 }
+
+
+
 
 .texto-botão1{
   display: flex;

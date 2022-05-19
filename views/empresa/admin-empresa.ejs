@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Administrativo</title>
+    <link rel="stylesheet" href="stylesheets/admin.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/style.css">   
+
+</head>
+<body>
+    <%- include("../partials/header") %>
+    <main id="admin-main">
+        <section id="tabela">
+            <div id="admin-menu">
+                <div id="empresa-nome">
+                    <h2><%= empresa.empresa  %> </h2>
+                </div>
+                <div id="menu-dash-admin">
+                    <ul>
+                        <li><strong>dashboard</strong> </li>
+                        <li><strong> profile</li></strong>
+                        <li><strong>maps</strong></li>
+                        <li><strong><a href="/adminempresa/categorias">Categorias</a> </strong></li>
+                        <li> <strong><a href="/adminempresa/produtos">product</a></strong></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div>
+            <div id="submenu-admin">
+                <div id="lista-submenu">
+                    <div></div>
+                    <img class="logado-login" src="images/logado.png" alt="">
+                </div>
+                
+            </div>
+            <div class="containers-admin">
+                <div id="container-1-numero">
+                    <div class="informacoes-1">
+                        <ul>
+                            <li><strong> Informações de vendas</li></strong>
+                            <li>Vendidos</li>
+                            <li>Total R$500</li>    
+                        </ul>
+                    </div>
+                </div>
+                <div id="container-2-numero">
+                    <div class="informacoes-2">
+                        <ul>
+                            <li><strong> Informações de vendas</li></strong>
+                            <li>Saldo R$9000</li>
+                            <li>Disponivel R$500</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+    </main>
+   <footer>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error nesciunt neque tenetur minima eveniet similique, porro quo quasi. Rerum, facere eligendi consequatur asperiores consectetur ullam nobis alias tempora vitae?
+   </footer>
+</body>
+</html>

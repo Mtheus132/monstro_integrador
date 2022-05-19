@@ -33,7 +33,7 @@
         <div class="caixa-principal">
             <a class="caixa-produtos" href="/views/index.ejs"> Suplementos</a>
         </div>
-    </main>
+   
 
     
     <section class="seção-produtos">
@@ -42,35 +42,21 @@
 
             <section class="seção-produtos">
                 <div class="produtos">
-                            
+                    <% produtos.forEach(function(produto) {  %>
+                         
                     <div class="produto1">
-                        <img id="produto-whey-1" src="images/whey-lista.png" alt="Imagem Whey Protein">
+                        <img id="produto-whey-1" src="/uploads/<%= produto.imagem %>" alt="Imagem Whey Protein">
                         <div class="texto-botão-1">
-                            <p id="descrição-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero cumque expedita nostrum pariatur reiciendis nemo iure quam aliquam dignissimos praesentium debitis laboriosam ipsa, reprehenderit adipisci! Sequi distinctio maiores reiciendis!</p>
+                            <p id="descrição-1"><%= produto.nome %> </p>
+                            <p id="descrição-1"><%= produto.descricao %> </p>
+                            <p id="descrição-1"><%= produto.valor %> </p>
                             <button id="botão-carrinho-1">
                                 Adicionar ao Carrinho
                             </button>
                         </div>
                     </div>
+                    <% })  %> 
                     
-                    <div class="produto2">
-                        <img id="produto-whey-2" src="images/touro-lista.png" alt="Imagem Touro suplemento">
-                        <div class="texto-botão-2">
-                            <p id="descrição-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, necessitatibus! Blanditiis fugit explicabo accusamus, rerum tempore distinctio ipsum quod, magni in sequi nulla temporibus rem repudiandae modi perferendis voluptas similique?</p>
-                            <button id="botão-carrinho-2">
-                                Adicionar ao Carrinho
-                            </button>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="produto3">
-                        <img id="produto-whey-3" src="images/over-lista.png" alt="Imagem Over suplemento">
-                        <div class="texto-botão-3">
-                            <p id="descrição-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, necessitatibus! Blanditiis fugit explicabo accusamus, rerum tempore distinctio ipsum quod, magni in sequi nulla temporibus rem repudiandae modi perferendis voluptas similique?</p>
-                            <button id="botão-carrinho-3">
-                                Adicionar ao Carrinho
-                            </button>
                     </div>
                     </div>
                     
@@ -85,12 +71,13 @@
     
         
 
-        <div class="sub-icones">
+        
+    </main>
+    <div class="sub-icones">
           
-            <a href="../imgs/icones.png.png"><img id="icones-unidos" src="images/icones.png.png" alt=""></a>
+        <a href="../imgs/icones.png.png"><img id="icones-unidos" src="images/icones.png.png" alt=""></a>
 
-        </div>
-    
+    </div>
         <%- include("./partials/footer") %>
 
 

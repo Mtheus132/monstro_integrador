@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+
+    <title>Erro</title>
+</head>
+<body>
+
+    <%- include("./partials/header") %>
+    <section class="section-body">
+        <section class="contato">
+            <div class="container">
+                <h1>Cadastro de serviço</h1>
+
+                <div class="align-row">
+                        <h1>OCORREU ERRO DE VALIDAÇÃO</h1>
+
+
+                        <span><%= mensagemErro %> </span>
+                </div>
+            </div>
+        </section>
+    </section>
+    <%- include("./partials/footer") %>
+    
+</body>
+</html>

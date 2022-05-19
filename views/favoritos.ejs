@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brand-admin</title>
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    
+</head>
+
+
+<body>
+    <%- include("./partials/header") %>
+    <main>        
+
+
+      <table class="table" >
+        <tbody>
+        <tr class="table-active">
+            <th>categoria</th>
+            <th>ID</th>
+            <th >nome</th>
+            <th >descricao</th>
+            <th >valor</th>
+            <th >acos</th>
+        </tr>
+        
+            <% favoritos.forEach(function (favorito){ %>
+            <tr>
+              <td><%= favorito.categoria_id %> </td>
+              <td><%= favorito.id  %> </td>
+              <td><%= favorito.nome  %>  </td>
+              <td><%= favorito.descricao  %></td>
+              <td><%= favorito.valor  %></td>
+              <td>
+                <a href="/admin/produtos/<%= favorito.id %>/edit">Editar</a>
+                <a href="/admin/favoritos/<%= favorito.id %>/remover">Remover</a>
+
+                
+              </td>
+            </tr>
+          </div>
+        <%
+            }) %>
+        </tbody>
+      </table> 
+          
+      </section>
+ 
+  <a href="/admin/produtos">Voltar para lista de produtos</a>
+</main>
+    <%- include("./partials/footer") %>
+</body>
+
+</html>

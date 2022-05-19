@@ -1,0 +1,86 @@
+<%- include("../partials/head")%>
+
+<link rel="stylesheet" href="/stylesheets/header.css">
+<link rel="stylesheet" href="/stylesheets/footer.css">
+<link rel="stylesheet" href="/stylesheets/admin.css">
+<link rel="stylesheet" href="/stylesheets/listaerros.css">
+
+
+
+    <title> Cadastre-se - Monstro Suplementos - Empresa</title>
+    </head>
+
+    <body>
+        <main>
+            <%- include("../partials/header")%>
+
+
+    
+            <div class="formulario">
+                
+                <div>
+                    <h1 id="titulo">Seja Um Parceiro! #Vemmostro</h1>
+                </div>
+
+                <form class="form-cadastro" method="POST" onsubmit="validaCadastro(event)" novalidate>
+            <div id="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <div class="lista-erros">
+
+            </div>
+
+            <label for="nome">Empresa</label>
+            <input type="text" name="empresa" placeholder="Digite o nome da empresa" data-required>
+            
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="Digite seu email" data-required>
+
+            <div class="row">
+                <div class="inputbox">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep"  required>
+                </div>
+                <div class="inputbox">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco"  required>
+                </div>
+                <div class="inputbox">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero"  required>
+                </div>
+            <!-- </div> -->
+            <!-- <div class="row"> -->
+                <div class="inputbox">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro"  required>
+                </div>
+                <div class="inputbox">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade"  required>
+                </div>
+                <div class="inputbox">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado"  required>
+                </div>
+            </div>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Senha" >
+
+            <label for="repeatPassword">Repita a senha</label>
+            <input type="password" name="repeatPassword" placeholder="Repita a senha">
+           
+
+            </div>
+            <button type="submit">ENVIAR</button>
+        </main>
+
+        
+    </body>
+    <script src="/js/validacao.js"></script>
+    <script src="/js/cadastro.js"></script>
+    <script src="/js/apiCep.js"></script>
+    
+    </html>

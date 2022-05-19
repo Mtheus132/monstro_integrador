@@ -1,5 +1,4 @@
-//const{ Ususario } =require('../models')
-const Usuario = require('../models/Usuario')
+const{ Usuario } =require('../models')
 
 const UserController= {
     index: async (req, res)=>{

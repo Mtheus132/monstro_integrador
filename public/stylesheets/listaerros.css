@@ -1,0 +1,10 @@
+.has-error{
+    border: 1px solid rgb(255, 10, 10);
+    background-color: rgb(241, 205, 205);
+    color: red;
+    font-weight: bold;
+  }
+
+.lista-erros{
+    color: red;
+  }

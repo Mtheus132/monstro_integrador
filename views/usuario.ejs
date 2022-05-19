@@ -28,10 +28,10 @@
 
         <h1 id="titulo">Entre em sua conta!</h1>
 
-        <form class="login">
+        <form class="login" onsubmit="validaCadastro(event)" novalidate>
 
-            <input id="email" type="email" placeholder=" E-mail">
-            <input id="senha" type="password" placeholder=" Senha">
+            <input id="email" type="email" placeholder=" E-mail" data-required>
+            <input id="senha" type="password" placeholder=" Senha" data-required>
         </form>
 
         <a href="">
@@ -58,5 +58,7 @@
 
     </main>
 </body>
+<script src="/js/validacao.js"></script>
+    <script src="/js/cadastro.js"></script>
 
 </html>

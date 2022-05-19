@@ -11,16 +11,28 @@
         <div class="cabeçario">
             <img id="logo" src="images/logo.oficial.jpeg" alt=" Icone do Site" />
 
-            <div class="pesquisar">
+            <div class="pesquisar" onsubmit="pesquisa()">
                 <img id="icone-buscar" src="images/icone-busca.png" alt="icone busca">
-                <input type="text" name="Pesquisar" placeholder=" Pesquisar" />
+                <input type="text" name="pesquisar" placeholder=" Pesquisar" />
+                <%  %> 
+                <button type="submit">ENVIAR</button>
             </div>
+            <ul id="login">
+            <% if(estaLogado) { %>
+                <a href="/login"><img id="icone-usuario" src="images/icone-entrar-peq.png" alt="Icone usuario"></a>
 
-            <a href="/login"><img id="icone-usuario" src="images/icone-entrar-peq.png" alt="Icone usuario"></a>
+                <li><a href="/admin"><%= usuarioLogado.nome %> <%= usuarioLogado.empresa %></a></li>
+                <li><a href="/logout">Logout</a></li>
+            <% } else { %>
+                <a href="/login"><img id="icone-usuario" src="images/icone-entrar-peq-invertida.png" alt="Icone usuario"></a>
 
+                <li><a href="/login">Login</a></li>
+            <% } %>
+            </ul>
             <a href="/carrinho"><img id="icone-carrinho" src="images/crrinho-original-pq-trans.png"
                     alt="Icone de um carrinho">
             </a>
+            
         </div>
 
 
@@ -29,7 +41,7 @@
             <a id="pagina-inicial" href="/">
                 <li ul>Página Inicial</li>
             </a>
-            <a id="lista-produtos" href="listaprodutos">
+            <a id="lista-produtos" href="/listaprodutos">
                 <li ul>Lista de Produtos</li>
             </a>
 
